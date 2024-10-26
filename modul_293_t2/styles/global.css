@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+
+html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+    width: 100vw !important;
+}
+
+body {
+    background: rgb(0, 255, 231);
+    background: radial-gradient(circle, rgba(0, 255, 231, 0.15) 0%, rgba(255, 255, 255, 0.3) 100%);
+    margin: 0;
+    padding: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6, a, div {
+    font-family: 'ABeeZee', sans-serif !important;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #FF6700;
+    font-weight: bold;
+    text-align: center;
+}

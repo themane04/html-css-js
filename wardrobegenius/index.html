@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+    <meta charset="UTF-8"/>
+    <title>WardrobeGenius</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@500&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<header class="header">
+    <div id="menu-btn" class="menu-btn">
+        <div class="menu-btn__bar"></div>
+        <div class="menu-btn__bar"></div>
+        <div class="menu-btn__bar"></div>
+    </div>
+
+    <div class="header__logo slide-in-element" id="logo">
+        <img src="images/logo.png" alt="background in the header with the text on top">
+    </div>
+    <nav class="header__menu menu">
+        <a class="menu__item slide-in-element active " href="index.html">Home</a>
+        <a class="menu__item slide-in-element" href="our_product.html">Our Product</a>
+        <a class="menu__item slide-in-element" href="contact.html">Contact</a>
+    </nav>
+    <p class="header__text slide-in-element"><b>"Your personal style consultant, right in your closet."</b></p>
+
+    <div class="header_icons slide-in-element">
+        <a href="https://www.facebook.com/marjan.tomev.35/" target="_blank" rel="noopener noreferrer">
+            <img src="images/fb.webp" alt="facebook logo icon">
+        </a>
+        <a href="https://www.instagram.com/marjantomev_/?fbclid=IwAR0E5s9_jimNtT68Saf19afjF4yjAsREGKfgNToB-mYzNFIetE9fNJ2a0DQ"
+           target="_blank" rel="noopener noreferrer">
+            <img src="images/ig.webp" alt="instagram logo icon">
+        </a>
+        <a href="https://twitter.com/TheMane04" target="_blank" rel="noopener noreferrer">
+            <img src="images/twitter.webp" alt="twitter logo icon">
+        </a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">
+            <img src="images/tiktok.webp" alt="tiktok logo icon">
+        </a>
+    </div>
+</header>
+<body class="page1">
+<div id="chatBalloon">
+    <span class="material-symbols-outlined">sms</span> Find out your style
+</div>
+
+<div id="chatBox" style="display:none;">
+    <div class="chat-header">
+        <span id="closeChat" class="close-btn2">X</span>
+        <img src="images/logo.png" alt="WardrobeGenius logo">
+        <div class="text-container">
+            <h3>WardrobeGenius</h3>
+            <h6 style="font-size: 11px">We’ll reply as soon as we can</h6>
+        </div>
+    </div>
+
+    <div class="chat-area">
+        <p class="system-message">Hi there 👋! Welcome to the site. Let me know if you have any questions or if you are
+            interested in answering
+            some questions and finding out your style.</p>
+    </div>
+    <div class="chat-input">
+        <input id="userMessage" placeholder="Type your message..." type="text">
+        <button id="sendMessage">Send</button>
+    </div>
+</div>
+
+<div class="page__text">
+    <h1 id="h1" class="slide-in-element">WardrobeGenius</h1>
+    <h6 id="h6" class="slide-in-element">Your Digital Style Advisor</h6>
+    <p class="slide-in-element">Ever stood in front of your closet unsure of what to wear? WardrobeGenius is
+        your
+        solution. Our AI-powered app
+        learns your personal style and gives you outfit recommendations that suit you.</p>
+</div>
+<div class="photo">
+    <img id="zoomImg" src="images/clothes.jpg" alt="photo with clothes hanging">
+    <div class="photo__text">
+        <h2 class="slide-in-element">Our Story</h2>
+        <p class="slide-in-element">____</p>
+        <h3 class="slide-in-element">
+            The idea for WardrobeGenius was born out of a personal challenge: the everyday dilemma of not knowing what
+            to
+            wear from one's own closet. We wanted to create a simple, intelligent solution that helps people better
+            understand their style and make efficient use of their wardrobe. WardrobeGenius was founded with the mission
+            of
+            merging technology and fashion into a user-friendly app that makes getting dressed a little easier every
+            day.
+        </h3>
+    </div>
+</div>
+
+<script>
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
+
+    window.addEventListener('scroll', function () {
+        var scrollPosition = window.scrollY;
+        var maxScrollPosition = document.documentElement.scrollHeight - window.innerHeight;
+        var zoomImg = document.getElementById('zoomImg');
+
+        // Normalizing the scroll position
+        var normalizedPosition = scrollPosition / maxScrollPosition;
+
+        // You can use an easing function here if you like
+        var scale = 1 + (0.5 * normalizedPosition);  // Change the 0.5 to whatever max zoom you'd like
+
+        // Clamp the scale to be between 1 and 1.5
+        scale = Math.min(Math.max(1, scale), 1.5);
+
+        zoomImg.style.transform = `scale(${scale})`;
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        var slideInElements = document.querySelectorAll('.slide-in-element');
+
+        function checkPosition() {
+            for (var i = 0; i < slideInElements.length; i++) {
+                var element = slideInElements[i];
+                var positionFromTop = element.getBoundingClientRect().top;
+
+                if (window.innerHeight - positionFromTop > 0) {
+                    element.classList.add('reveal-item');
+                }
+            }
+        }
+
+        window.addEventListener('scroll', checkPosition);
+        window.addEventListener('resize', checkPosition);
+        window.addEventListener('load', checkPosition);
+    });
+
+    // Burger menu mobile
+    document.addEventListener('DOMContentLoaded', function () {
+        // Get the menu button, close button and overlay
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const menuOverlay = document.getElementById('menu-overlay');
+
+        // Function to toggle overlay visibility
+        function toggleMenu() {
+            if (menuOverlay.style.visibility === 'visible') {
+                menuOverlay.style.visibility = 'hidden';
+                menuOverlay.style.opacity = '0';
+            } else {
+                menuOverlay.style.visibility = 'visible';
+                menuOverlay.style.opacity = '1';
+            }
+        }
+
+        // Add click event to menu button
+        menuBtn.addEventListener('click', toggleMenu);
+
+        // Add click event to close button
+        closeBtn.addEventListener('click', toggleMenu);
+    });
+
+
+    // Disable horizontal scrolling
+    document.addEventListener("DOMContentLoaded", function () {
+        document.addEventListener("scroll", function () {
+            window.scrollTo(0, window.scrollY);
+        });
+    });
+
+    // Chat Box
+    document.addEventListener("DOMContentLoaded", function () {
+        var chatBalloon = document.getElementById('chatBalloon');
+        var chatBox = document.getElementById('chatBox');
+        var sendMessage = document.getElementById('sendMessage');
+        var userMessage = document.getElementById('userMessage');
+        var chatArea = document.querySelector('.chat-area');
+
+        chatBalloon.addEventListener('click', function () {
+            chatBalloon.style.display = 'none';
+            chatBox.style.display = 'flex';
+        });
+
+        sendMessage.addEventListener('click', function () {
+            var message = userMessage.value;
+            if (message.trim() !== '') {
+                var newMessage = document.createElement('p');
+                newMessage.textContent = message;
+                newMessage.className = 'user-message';
+                chatArea.appendChild(newMessage);
+
+                var systemMessage = document.createElement('p');
+                systemMessage.textContent = 'Auto-reply: Got your message! I will get back to you as soon as I can';
+                systemMessage.className = 'system-message';
+                chatArea.appendChild(systemMessage);
+
+                userMessage.value = '';
+            }
+        });
+    });
+
+    // Close button from chat
+    document.addEventListener('DOMContentLoaded', function () {
+        const chatBox = document.getElementById('chatBox');
+        const chatBalloon = document.getElementById('chatBalloon');
+        const closeChat = document.getElementById('closeChat');
+
+        closeChat.addEventListener('click', function () {
+            chatBox.style.display = 'none';
+            chatBalloon.style.display = 'flex';
+        });
+
+        chatBalloon.addEventListener('click', function () {
+            chatBox.style.display = 'flex';
+            chatBalloon.style.display = 'none';
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const inputField = document.getElementById('userMessage');
+        const sendButton = document.getElementById('sendMessage');
+
+        // Load existing chat history from localStorage
+        const chatArea = document.querySelector('.chat_area');
+        const storedChatHistory = JSON.parse(localStorage.getItem('chatHistory') || '[]');
+        storedChatHistory.forEach((messageObj) => {
+            const newMessage = document.createElement('div');
+            newMessage.classList.add(messageObj.type);
+            newMessage.textContent = messageObj.content;
+            chatArea.appendChild(newMessage);
+        });
+
+        // Listen for 'Enter' key press
+        inputField.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                sendMessage();
+            }
+        });
+
+        // Listen for button click
+        sendButton.addEventListener('click', sendMessage);
+
+        function sendMessage() {
+            const message = inputField.value;
+            if (message) {
+                // Create a new message element
+                const newMessage = document.createElement('div');
+                newMessage.classList.add('user-message');
+                newMessage.textContent = message;
+
+                // Add the new message to the chat area
+                chatArea.appendChild(newMessage);
+
+                // Save to localStorage
+                const chatHistory = JSON.parse(localStorage.getItem('chatHistory') || '[]');
+                chatHistory.push({type: 'user-message', content: message});
+                localStorage.setItem('chatHistory', JSON.stringify(chatHistory));
+
+                // Clear the input field
+                inputField.value = '';
+            }
+        }
+    });
+
+
+</script>
+<footer class="footer">
+    <p>© 2023 WardrobeGenius</p>
+</footer>
+</body>
+</html>

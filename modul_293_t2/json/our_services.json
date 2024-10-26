@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Custom Web Development",
+    "description": "We create responsive, high-performance websites tailored to your business needs. From e-commerce platforms to content management systems, we deliver modern web solutions that enhance user engagement and drive results.",
+    "image": "/modul_293_t2/img/services/web_development.png",
+    "bubbleClass": "bubble-pink-services",
+    "isFpImage": true
+  },
+  {
+    "title": "Mobile App Development",
+    "description": "Our team designs and builds intuitive mobile applications for both iOS and Android. Whether it's for business, entertainment, or productivity, we craft user-centric apps that offer seamless experiences across devices.",
+    "image": "/modul_293_t2/img/services/mobile_app_development.png",
+    "bubbleClass": "bubble-blue-services",
+    "isFpImage": true
+  },
+  {
+    "title": "Cloud Solutions",
+    "description": "Scale your business with our reliable cloud solutions. We provide cloud migration, infrastructure management, and optimization services to ensure your applications run smoothly and securely in the cloud environment.",
+    "image": "/modul_293_t2/img/services/cloud_solutions.png",
+    "bubbleClass": "bubble-pink-services",
+    "isFpImage": true
+  },
+  {
+    "title": "UI/UX Design",
+    "description": "Enhance your digital presence with user-focused design. Our UI/UX team creates visually stunning, easy-to-navigate interfaces that deliver an exceptional user experience, tailored to your target audience.",
+    "image": "/modul_293_t2/img/services/ui_ux_design.png",
+    "bubbleClass": "bubble-blue-services",
+    "isFpImage": true
+  },
+  {
+    "title": "Cybersecurity Services",
+    "description": "Protect your business from online threats with our comprehensive cybersecurity services. We offer threat detection, data encryption, and regular security assessments to ensure your systems are safe and secure.",
+    "image": "/modul_293_t2/img/services/cybersecurity.png",
+    "bubbleClass": "bubble-pink-services",
+    "imageStyle": "transform: scaleX(-1);",
+    "isFpImage": true
+  }
+]

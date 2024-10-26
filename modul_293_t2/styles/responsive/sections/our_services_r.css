@@ -1,0 +1,42 @@
+@media (max-width: 1105px) {
+    .bubble-blue-services, .bubble-pink-services {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .bubble-blue-services img, .bubble-pink-services img {
+        margin: 20px 0 0 0;
+        width: 400px;
+        height: auto;
+    }
+
+    .services-text, .description-services {
+        margin: 0 auto 20px auto;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .description-services {
+        width: 60%;
+    }
+
+    .fp-image {
+        width: 400px !important;
+        height: 400px !important;
+    }
+}
+
+@media (max-width: 424px) {
+    .fp-image {
+        width: 300px !important;
+        height: 300px !important;
+    }
+}
+
+@media (max-width: 341px) {
+    .fp-image {
+        width: 200px !important;
+        height: 200px !important;
+    }
+}

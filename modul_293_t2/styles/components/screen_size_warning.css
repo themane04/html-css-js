@@ -1,0 +1,28 @@
+#screen-size-warning {
+    display: none;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    text-align: center;
+    color: #333333;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#screen-size-warning p {
+    margin-top: 50vh;
+}
+
+@media (max-width: 271px) {
+    #screen-size-warning {
+        display: block;
+    }
+
+    body {
+        margin-top: 50px;
+    }
+}

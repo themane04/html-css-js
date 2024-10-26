@@ -1,0 +1,27 @@
+@media (max-width: 905px) {
+    .bubble {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .inner-bubble {
+        width: 90%;
+        height: 140px;
+        border-radius: 500px 500px 0 0;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .description {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    .inner-bubble #left-text {
+        font-size: 2rem;
+        text-align: center;
+    }
+}

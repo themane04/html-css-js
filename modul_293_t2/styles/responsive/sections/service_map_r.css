@@ -1,0 +1,20 @@
+@media (max-width: 1390px) {
+    .service-map-container {
+        flex-direction: column;
+        height: auto;
+        padding: 50px 20px;
+        gap: 20px;
+    }
+
+    .service-map-left-title, .service-map-description {
+        width: 60vw;
+        text-align: center;
+    }
+
+    .service-map-description {
+        font-size: 1.2rem;
+        text-align: left;
+        margin: 0 auto;
+        display: flex;
+    }
+}

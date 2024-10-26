@@ -1,0 +1,22 @@
+@media (max-width: 548px) {
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    #footer-logo {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    #footer-logo img {
+        height: 50px;
+    }
+
+    .footer-info {
+        font-size: 0.9rem;
+    }
+}

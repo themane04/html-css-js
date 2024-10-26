@@ -1,0 +1,40 @@
+.w3-display-container {
+    height: 100vh;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.header-outer-text {
+    width: 40vw;
+}
+
+.header-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, orange, #00aaff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.header-text p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #555555;
+}
+
+.header-image {
+    width: 700px;
+    height: 600px;
+    background-image: url("/modul_293_t2/img/header/header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

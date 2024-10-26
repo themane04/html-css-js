@@ -1,0 +1,64 @@
+.bubble-pink-services {
+    background-color: #FFF5FF;
+    width: 95%;
+    height: fit-content;
+    border-radius: 0 500px 500px 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 25px;
+}
+
+.description-services {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    color: #555555;
+    padding-top: 50px;
+}
+
+.services-text {
+    text-align: left;
+    margin: -50px auto 0;
+}
+
+.services-text h1, .services-text-blue h1 {
+    color: #FF6700;
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+.bubble-pink-services img {
+    width: 375px;
+    height: 305px;
+    margin-right: 100px;
+}
+
+.bubble-blue-services {
+    background-color: #F5F8FF;
+    height: fit-content;
+    margin-left: 5%;
+    border-radius: 500px 0 0 500px;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+}
+
+.bubble-blue-services img {
+    width: 375px;
+    height: 305px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.bubble-blue-services, .bubble-pink-services {
+    margin-bottom: 60px;
+    border: 3px solid white;
+}
+
+.fp-image {
+    height: 400px!important;
+    width: 400px!important;
+}
