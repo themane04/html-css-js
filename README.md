@@ -1,3 +1,5 @@
+# HTML/CSS/JavaScript
+
 Ah yes...pure HTML/CSS and JavaScript are just things that are innvideble as a programmer. Throught my apprenticeship I had the opporutinty to create some projects with these technologies at my school and at my first company as a first project.
 
 > [!NOTE]
